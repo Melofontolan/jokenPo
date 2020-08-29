@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo TN07</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="iniciar();">
+    <header>
+        <h1> Jokenpo</h1>
+    </header>
+    <div class="scoreboard">
+        <p id="scores">
+            <span id="userScore">0</span>:<span id="compScore">0</span>
+        </p>
+        <p id="userLabel" class="scoreLabel">user</p>
+        <p id="compLabel" class="scoreLabel">comp</p>
+    </div>
+
+    <div class="result">
+        <p id="result"></p>
+    </div>
+
+    <div class="buttons">
+        <a id="useChoice-1" onclick="play(1)">
+        <img src="img/paper.png" id="paperButton" alt="Papel"></a>
+        <a id="choice-2" onclick="play(2)">
+        <img src="img/rock.png" id="rockButton" alt="Pedra"></a>
+        <a id="choice-2" onclick="play(3)">
+        <img src="img/scissors.png" id="scissorsButton" alt="Tesoura"></a>
+    </div>
+
+    <footer>
+        <p>Faça sua jogada.</p>
+    </footer>
+
+    <button id="reset" onclick="resetar()">Resetar</button>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
